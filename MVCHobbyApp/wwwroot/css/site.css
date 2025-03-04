@@ -20,3 +20,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.image-container {
+  display: flex;
+  justify-content: space-around; /* Evenly distributes images across the width */
+  align-items: center; /* Aligns images in the middle of the container */
+  margin-top: 50px; /* Adjusts top margin if needed */
+  padding: 0 5%; /* Adds some spacing on the sides */
+}
+
+.image-container img {
+  width: 250px; /* Increased image size */
+  height: 250px; /* Keeps them square */
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-radius: 6px; /* Optional: Adds rounded corners */
+}
+

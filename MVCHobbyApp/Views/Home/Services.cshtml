@@ -1,19 +1,33 @@
-@page
-@model MVCHobbyApp.Views.Home.Services
-
 @{
-    Layout = null;
+    ViewData["Title"] = "Services Provided";
 }
 
-<!DOCTYPE html>
+<img src="~/img/Travelling.png" alt="Responsive Image" style="max-width: 100%; height: auto;">
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<h1 class="display-3">Book a Consult Below</h1>
+<br/>
+<p>Here we can create a personalized plan for your credit card journey<br/>
+    Tell me your travel dream and I will get you there at no cost!</p>
+<br/>
+
 <div>
-    
+    <label for="hours">Enter required hours:</label>
+    <input type="number" id="hours" min="1" required>
 </div>
-</body>
-</html>
+
+<div>
+    <label for="rate">Hourly Rate ($):</label>
+    <input type="text" id="rate" value="30" readonly>
+</div>
+
+<div>
+    <button id="calculate">Calculate Total</button>
+</div>
+
+<div>
+    <label for="total">Total Cost ($):</label>
+    <input type="text" id="total" readonly>
+</div>
+
+<!-- Link the JavaScript file -->
+<script src="~/js/site.js"></script>
